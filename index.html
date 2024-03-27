@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Armon Kaizman</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/openai@3.1.0/dist/openai.min.js"></script>
-    <style>
+   <script>"https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css"</script>
+<style>
         h1 {
             text-align: center;
         }
@@ -34,7 +32,7 @@
         .div-img {
         max-width:720px;       
         display: block;
-        margin: 0 auto;
+        margin: 20px auto;
         }
 
         img {
@@ -107,22 +105,24 @@
             margin: 10px 0;
         }
 
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
     </style>
 </head>
 
 <body>
    
     <div class="div-img">
-        
         <h1>Armon Kaizman</h1>
-        <p>Gabelsberger Str. 11, 50674 Köln</p>
-
-        <p>armon.kaizman@gmail.com</p>
-
-        <p>0176 / 72950036</p> 
-
-        <picture>
-            <img src="img/armon-2.jpg" alt="Armon Kaizman">
+            <p>Gabelsberger Str. 11, 50674 Köln</p>
+    <p>armon.kaizman@gmail.com</p>
+<p>0176 / 72950036</p> 
+    <img src="img/armon-2.jpg" alt="Armon Kaizman">
+     
             <div class="img-icon-container">
             Interesse an IT und Technik: Künstliche Intelligenz, Machine Learning und Webentwicklung.<br>
             Erfahrung mit Tools und Anwendungen wie 
@@ -135,14 +135,15 @@
                 Cody 
                 <img class="img-icon" src="img/cody.png" alt="Cody Icon">
             </div>
-            
-            Sprachkenntnisse:<br>
-            Deutsch Muttersprache<br>
-            Hebräisch Muttersprache<br>
-            Englisch fließend in Wort und Schrift<br>
-            Französisch Grundkenntnisse
 
-        </picture>
+            <div>
+                Sprachkenntnisse:<br>
+                Deutsch Muttersprache<br>
+                Hebräisch Muttersprache<br>
+                Englisch fließend in Wort und Schrift<br>
+                Französisch Grundkenntnisse
+            </div>
+
 
 
     
@@ -151,13 +152,13 @@
         <div class="bereich-container">
     
 
-            <div style="padding: 30px; background-color: black; border-radius: 5px;">
-                <div class="absolute inset-4 ">
+        
+                <div class="absolute inset-4">
                     <div
                         class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0"
                     >
                         <iframe
-                            style="border: none;"
+                           
                             srcdoc="<body> <script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script><script>
                                 window.botpressWebChat.init({
                                     'composerPlaceholder': 'Ask your question here',
@@ -183,12 +184,10 @@
                                 });
                             window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
                             </script></body>"
-                            width="100%"
-                            height="100%"
                         ></iframe>
-                    </div>
                 </div>
             </div>
+            
         
             <div class="download-bereich-container">
                 <h4>Download:</h4>
@@ -203,5 +202,6 @@
         </div>
     </div>
     
+</body>
 
 </html>
