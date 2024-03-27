@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Armon Kaizman</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/openai@3.1.0/dist/openai.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin: 5px 0  ;
+        }
+
+
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+       
+
+        .div-img {
+        max-width:720px;       
+        display: block;
+        margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        picture {
+            display: block;
+            margin: 30px auto;
+        }
+
+        .img-icon {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            vertical-align:baseline;
+        }
+        
+
+        .download-bereich {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content:flex-start;
+            margin: 0px; 
+                  
+        }
+        
+        .download-bereich-container {
+            border-radius: 5px;
+            background-color:white;
+            border: solid 1px rgb(173, 173, 173);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .center-div {
+            height: 50vh;
+            width: 100%;
+            border-radius: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+            color: white;
+      }
+ 
+      @media only screen and (max-width: 600px) {
+        .center-div {
+          height: 40vh;
+          width:100%;
+        }
+      }
+        
+      .bereich-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 20px;
+            border: solid 1px rgb(173, 173, 173);
+            border-radius: 5px;
+            background-color: rgb(241, 240, 240);
+        }
+
+        .bereich-container > * {
+            flex-basis: 100%;
+        }
+
+        .img-icon-container {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="div-img">
+        
+        <h1>Armon Kaizman</h1>
+        <p>Gabelsberger Str. 11, 50674 Köln</p>
+
+        <p>armon.kaizman@gmail.com</p>
+
+        <p>0176 / 72950036</p> 
+
+        <picture>
+            <img src="img/armon-2.jpg" alt="Armon Kaizman">
+            <div class="img-icon-container">
+            Interesse an IT und Technik: Künstliche Intelligenz, Machine Learning und Webentwicklung.<br>
+            Erfahrung mit Tools und Anwendungen wie 
+            Visual Studio Code <img class="img-icon" src="img/vscode.svg" alt="Description of the image">
+            GitHub Copilot
+
+                <img class="img-icon" src="img/brand-github-copilot.svg" alt="GitHub Copilot Icon"> 
+                Llama 2  <img class="img-icon" src="img/Llama-2-icon-150x150.png" alt="Llama 2 Icon">
+                und 
+                Cody 
+                <img class="img-icon" src="img/cody.png" alt="Cody Icon">
+            </div>
+            
+            Sprachkenntnisse:<br>
+            Deutsch Muttersprache<br>
+            Hebräisch Muttersprache<br>
+            Englisch fließend in Wort und Schrift<br>
+            Französisch Grundkenntnisse
+
+        </picture>
+
+
+    
+        <h2>Download/- Informations Bereich</h2>
+    
+        <div class="bereich-container">
+    
+
+            <div style="padding: 30px; background-color: black; border-radius: 5px;">
+                <div class="absolute inset-4 ">
+                    <div
+                        class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0"
+                    >
+                        <iframe
+                            style="border: none;"
+                            srcdoc="<body> <script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script><script>
+                                window.botpressWebChat.init({
+                                    'composerPlaceholder': 'Ask your question here',
+                                    'botConversationDescription': 'This chatbot helps you to get to know Armon Kaizman.',
+                                    'botName': 'Armon Kaizman',
+                                    'botId': '9cc0d4fa-ce94-4d81-8968-76bb12247cf9',
+                                    'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                                    'messagingUrl': 'https://messaging.botpress.cloud',
+                                    'clientId': '9cc0d4fa-ce94-4d81-8968-76bb12247cf9',
+                                    'enableConversationDeletion': true,
+                                    'showPoweredBy': true,
+                                    'className': 'webchatIframe',
+                                    'containerWidth': '100%25',
+                                    'layoutWidth': '100%25',
+                                    'hideWidget': true,
+                                    'showCloseButton': false,
+                                    'disableAnimations': true,
+                                    'closeOnEscape': false,
+                                    'showConversationsButton': false,
+                                    'enableTranscriptDownload': false,
+                                    'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
+                                    
+                                });
+                            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                            </script></body>"
+                            width="100%"
+                            height="100%"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="download-bereich-container">
+                <h4>Download:</h4>
+                <div class="download-bereich">
+                <p><a href="img/Bewerbungsanschreiben_Ausbildung_IT_allg.pdf" target="_blank"> Bewerbungsanschreiben</a></p>
+                <p><a href="img/Abiturzeugnis_Armon_Kaizman.pdf" target="_blank">Abiturzeugnis</a></p>
+                <p><a href="img/KaizmanArmon_Lebenslauf_2024.pdf" target="_blank">Lebenslauf</a></p>
+                <p><a href="img/Gesellenbrief_Zertifikat.pdf" target="_blank">Gesellenbrief und Zertifikat</a></p>
+                <p><a href="img/armon-2.jpg" target="_blank">Foto Armon Kaizman</a></p> 
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+</html>
